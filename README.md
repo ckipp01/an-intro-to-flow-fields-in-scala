@@ -11,7 +11,7 @@ City](https://www.meetup.com/scala-in-the-city/events/292844959/) in London.
 
 ## How to run
 
-Inside of [`Main.scala`](./Main.scala) you'll see multiple different main
+Inside of [`project.scala`](./project.scala) you'll see multiple different main
 methods. Each one corresponds to an image in the blog post. For example to run
 the first one via the command line you can do the following:
 
