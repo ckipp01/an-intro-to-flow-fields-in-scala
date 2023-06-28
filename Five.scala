@@ -5,6 +5,9 @@ import scala.math.Pi
 import scala.math.cos
 import scala.math.sin
 
+@main def runFive(args: String*): Unit =
+  PApplet.main("Five")
+
 class Five extends PApplet:
   // The actual size of our canvas
   val Width = 1000

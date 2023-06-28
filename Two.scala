@@ -3,6 +3,9 @@ import processing.core.*
 import processing.core.PApplet
 import scala.math.Pi
 
+@main def runTwo(args: String*): Unit =
+  PApplet.main("Two")
+
 class Two extends PApplet:
   // The actual size of our canvas
   val Width = 1000
@@ -33,12 +36,12 @@ class Two extends PApplet:
         val x = (col * resolution)
         val y = (row * resolution)
         val angle = ((row.toDouble / numRows.toDouble) * Pi)
-        drawLine(x, y, angle, resolution - 2)
+        drawArrow(x, y, angle, resolution - 2)
 
   /** Given x and y coordinates we "GOTO" that part of the grid and then draw an
     * arrow showing the given angle.
     */
-  def drawLine(x: Double, y: Double, angle: Double, len: Double): Unit =
+  def drawArrow(x: Double, y: Double, angle: Double, len: Double): Unit =
     // To better understand what is going on here with push/popMatrix,
     // check out https://processing.org/tutorials/transform2d.
     pushMatrix()

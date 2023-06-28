@@ -5,6 +5,9 @@ import scala.math.Pi
 import scala.math.cos
 import scala.math.sin
 
+@main def runThree(args: String*): Unit =
+  PApplet.main("Three")
+
 class Three extends PApplet:
   // The actual size of our canvas
   val Width = 1000
@@ -35,7 +38,7 @@ class Three extends PApplet:
 
     for col <- 0 until numCols do
       for row <- 0 until numRows do
-        drawLine(
+        drawArrow(
           col * resolution,
           row * resolution,
           grid(col)(row),
@@ -82,7 +85,7 @@ class Three extends PApplet:
   /** Given x and y coordinates we "GOTO" that part of the grid and then draw an
     * arrow showing the given angle.
     */
-  def drawLine(x: Double, y: Double, angle: Double, len: Double): Unit =
+  def drawArrow(x: Double, y: Double, angle: Double, len: Double): Unit =
     pushMatrix()
     translate(x.toFloat, y.toFloat)
     rotate(angle.toFloat)

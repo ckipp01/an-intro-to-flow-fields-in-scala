@@ -6,6 +6,9 @@ import scala.math.cos
 import scala.math.sin
 import scala.util.Random
 
+@main def runSeven(args: String*): Unit =
+  PApplet.main("Seven")
+
 class Seven extends PApplet:
   // The actual size of our canvas
   val Width = 1000

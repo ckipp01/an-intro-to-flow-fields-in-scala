@@ -3,6 +3,9 @@ import processing.core.*
 import processing.core.PApplet
 import scala.math.Pi
 
+@main def runOne(args: String*): Unit =
+  PApplet.main("One")
+
 class One extends PApplet:
   // The actual size of our canvas
   val Width = 1000

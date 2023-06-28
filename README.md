@@ -2,8 +2,7 @@
 
 This repo holds the code necessary to run the examples in [this blog
 post](https://www.chris-kipp.io/blog/an-intro-to-flow-fields-in-scala) as well
-as the examples that will be shown during the talk at [Scala in the
-City](https://www.meetup.com/scala-in-the-city/events/292844959/) in London.
+as the examples that will be shown during the talk at [ScalaDays](https://scaladays.org/madrid-2023/) in Madrid.
 
 ## What's needed
 
@@ -11,9 +10,9 @@ City](https://www.meetup.com/scala-in-the-city/events/292844959/) in London.
 
 ## How to run
 
-Inside of [`project.scala`](./project.scala) you'll see multiple different main
-methods. Each one corresponds to an image in the blog post. For example to run
-the first one via the command line you can do the following:
+Inside of each numbered Scala file you'll see a main method. Each one
+corresponds to an image in the blog post. For example to run the first one via
+the command line you can do the following:
 
 ```sh
 scala-cli run -M runOne .
